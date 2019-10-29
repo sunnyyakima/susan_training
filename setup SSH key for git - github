@@ -1,0 +1,12 @@
+# https://gist.github.com/adamjohnson/5682757
+there should have two files to connect local git with github in .ssh folder:
+id_rsa
+id_rsa.pub
+
+if not exist,runing following
+ssh-keygen -t rsa -C "your_email@example.com"
+then just enter twice using default setting for names
+
+this command should generate these two files in .ssh.
+
+copy the conetent of id_rsa.pub, then paste it to the SSH key field in github (settings --> SSH keys
